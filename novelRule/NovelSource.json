@@ -1,60 +1,122 @@
 [
   {
-	"baseUrl": "http://www.yunlaige.com/",
-	"chapterContentRule": {
-		"bookChapterContent": "#content"
-	},
-	"chapterListRule": {
-		"bookChapterList": "#contenttable > :nth-child(1) a[href]",
-		"bookChapterName": "a",
-		"bookChapterNameRegex": "",
-		"bookChapterUrl": "a"
-	},
-	"enable": true,
-	"introRule": {
-		"bookAuthor": ".book-info .info > :nth-child(2) > :nth-child(1)",
-		"bookAuthorRegex": "",
-		"bookChapterListUrl": ".book-info .info > :nth-child(4) a[href]",
-		"bookCoverImgUrl": ".book-info > :nth-child(1) > :nth-child(1)",
-		"bookIntro": ".book-info .info > :nth-child(3)",
-		"bookIntroRegex": "",
-		"bookName": ".book-info .info > :nth-child(1) > :nth-child(1)",
-		"bookNameRegex": "",
-		"bookUrl": ""
-	},
-	"searchRule": {
-		"charset": "GBK",
-		"method": "POST",
-		"resultRules": [{
-			"author": "> :nth-child(2) > :nth-child(2)",
-			"authorRegex": "(.*)/.*",
-			"bookCoverImgUrl": ".cover img",
-			"bookInfos": ".chart-dashed-list > *",
-			"bookUrl": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
-			"lastChapterName": ".htitle .gxz a",
-			"lastChapterNameRegex": "",
-			"lastChapterUrl": ".htitle .gxz a",
-			"name": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
-			"nameRegex": ""
-		}, {
-			"author": ".info > :nth-child(2) > :nth-child(1)",
-			"authorRegex": ".*：(.*)",
-			"bookCoverImgUrl": ".book-info > :nth-child(1) > :nth-child(1)",
-			"bookInfos": ".book-info",
-			"bookUrl": "",
-			"lastChapterName": ".tabnewlist tr:nth-child(1) td:nth-child(1) a",
-			"lastChapterNameRegex": "",
-			"lastChapterUrl": ".tabnewlist tr:nth-child(1) td:nth-child(1) a",
-			"name": ".info > :nth-child(1) > :nth-child(1)",
-			"nameRegex": ""
-		}],
-		"searchKey": "searchkey",
-		"serverUrl": "http://www.yunlaige.com/modules/article/search.php"
-	},
-	"sequence": 1.0,
-	"sourceName": "云来阁",
-	"topLevelDomain": "yunlaige.com"
-},
+    "baseUrl": "http://www.yunlaige.com/",
+    "chapterContentRule": {
+      "bookChapterContent": "#content"
+    },
+    "chapterListRule": {
+      "bookChapterList": "#contenttable > :nth-child(1) a[href]",
+      "bookChapterName": "a",
+      "bookChapterNameRegex": "",
+      "bookChapterUrl": "a"
+    },
+    "enable": true,
+    "introRule": {
+      "bookAuthor": ".book-info .info > :nth-child(2) > :nth-child(1)",
+      "bookAuthorRegex": "",
+      "bookChapterListUrl": ".book-info .info > :nth-child(4) a[href]",
+      "bookCoverImgUrl": ".book-info > :nth-child(1) > :nth-child(1)",
+      "bookIntro": ".book-info .info > :nth-child(3)",
+      "bookIntroRegex": "",
+      "bookName": ".book-info .info > :nth-child(1) > :nth-child(1)",
+      "bookNameRegex": "",
+      "bookUrl": ""
+    },
+    "searchRule": {
+      "charset": "GBK",
+      "method": "POST",
+      "resultRules": [
+        {
+          "author": "> :nth-child(2) > :nth-child(2)",
+          "authorRegex": "(.*)/.*",
+          "bookCoverImgUrl": ".cover img",
+          "bookInfos": ".chart-dashed-list > *",
+          "bookUrl": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
+          "lastChapterName": ".htitle .gxz a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": ".htitle .gxz a",
+          "name": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
+          "nameRegex": ""
+        },
+        {
+          "author": ".info > :nth-child(2) > :nth-child(1)",
+          "authorRegex": ".*：(.*)",
+          "bookCoverImgUrl": ".book-info > :nth-child(1) > :nth-child(1)",
+          "bookInfos": ".book-info",
+          "bookUrl": "",
+          "lastChapterName": ".tabnewlist tr:nth-child(1) td:nth-child(1) a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": ".tabnewlist tr:nth-child(1) td:nth-child(1) a",
+          "name": ".info > :nth-child(1) > :nth-child(1)",
+          "nameRegex": ""
+        }
+      ],
+      "searchKey": "searchkey",
+      "serverUrl": "http://www.yunlaige.com/modules/article/search.php"
+    },
+    "sequence": 1.0,
+    "sourceName": "云来阁",
+    "topLevelDomain": "yunlaige.com"
+  },
+  {
+    "baseUrl": "http://www.6mao.com/",
+    "chapterContentRule": {
+      "bookChapterContent": "#neirong"
+    },
+    "chapterListRule": {
+      "bookChapterList": ".liebiao_bottom a",
+      "bookChapterName": "a",
+      "bookChapterNameRegex": "",
+      "bookChapterUrl": "a"
+    },
+    "enable": true,
+    "introRule": {
+      "bookAuthor": ".intro .author",
+      "bookAuthorRegex": ".*：(.*)",
+      "bookChapterListUrl": "",
+      "bookCoverImgUrl": ".intro .l img",
+      "bookIntro": ".intro .jieshao",
+      "bookIntroRegex": "",
+      "bookName": ".intro .title h2",
+      "bookNameRegex": "",
+      "bookUrl": ""
+    },
+    "searchRule": {
+      "charset": "GBK",
+      "method": "POST",
+      "resultRules": [
+        {
+          "author": "> :nth-child(3)",
+          "authorRegex": "",
+          "bookCoverImgUrl": "",
+          "bookInfos": "._content tbody tr:gt(1)",
+          "bookUrl": "> :nth-child(1) a",
+          "lastChapterName": "> :nth-child(2) a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": "> :nth-child(2) a",
+          "name": "> :nth-child(1) a",
+          "nameRegex": ""
+        },
+        {
+          "author": ".author",
+          "authorRegex": ".*：(.*)",
+          "bookCoverImgUrl": ".l img",
+          "bookInfos": ".intro",
+          "bookUrl": "",
+          "lastChapterName": ".last a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": ".last a",
+          "name": ".title h2",
+          "nameRegex": ""
+        }
+      ],
+      "searchKey": "searchkey",
+      "serverUrl": "/modules/article/ss.php"
+    },
+    "sequence": 1.0,
+    "sourceName": "6毛",
+    "topLevelDomain": "6mao.com"
+  },
   {
     "baseUrl": "https://www.aszw.org/",
     "chapterContentRule": {
@@ -85,8 +147,12 @@
         {
           "author": "> :nth-child(3) a[href]",
           "authorRegex": "",
+          "bookCoverImgUrl": "",
           "bookInfos": "#content tbody tr",
           "bookUrl": "> :nth-child(1) a[href]",
+          "lastChapterName": "> :nth-child(2) a[href]",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": "> :nth-child(2) a[href]",
           "name": "> :nth-child(1) a[href]",
           "nameRegex": ""
         }
@@ -128,8 +194,12 @@
         {
           "author": "> :nth-child(3)",
           "authorRegex": "",
+          "bookCoverImgUrl": "",
           "bookInfos": "tbody > tr",
           "bookUrl": "> :nth-child(1) a",
+          "lastChapterName": "> :nth-child(2) a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": "> :nth-child(2) a",
           "name": "> :nth-child(1) a",
           "nameRegex": ""
         }
@@ -171,8 +241,12 @@
         {
           "author": ".result-game-item-info > :nth-child(1) > :nth-child(2)",
           "authorRegex": "",
+          "bookCoverImgUrl": ".result-game-item-pic img",
           "bookInfos": ".result-list > *",
           "bookUrl": ".result-game-item-title-link",
+          "lastChapterName": ".result-game-item-info > :nth-child(4) > a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": ".result-game-item-info > :nth-child(4) > a",
           "name": ".result-game-item-title-link span",
           "nameRegex": ""
         }
@@ -214,8 +288,12 @@
         {
           "author": "> :nth-child(4) a",
           "authorRegex": "",
+          "bookCoverImgUrl": "",
           "bookInfos": "#newscontent ul > li",
           "bookUrl": "> :nth-child(2) a",
+          "lastChapterName": "> :nth-child(3) a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": "> :nth-child(3) a",
           "name": "> :nth-child(2) a",
           "nameRegex": ""
         }
@@ -226,56 +304,5 @@
     "sequence": 1.0,
     "sourceName": "大海中文",
     "topLevelDomain": "dhzw.org"
-  },
-  {
-    "baseUrl": "http://www.6mao.com/",
-    "chapterContentRule": {
-      "bookChapterContent": "#neirong"
-    },
-    "chapterListRule": {
-      "bookChapterList": ".liebiao_bottom a",
-      "bookChapterName": "a",
-      "bookChapterNameRegex": "",
-      "bookChapterUrl": "a"
-    },
-    "enable": true,
-    "introRule": {
-      "bookAuthor": ".intro .author",
-      "bookAuthorRegex": ".*：(.*)",
-      "bookChapterListUrl": "",
-      "bookCoverImgUrl": ".intro .l img",
-      "bookIntro": ".intro .jieshao",
-      "bookIntroRegex": "",
-      "bookName": ".intro .title h2",
-      "bookNameRegex": "",
-      "bookUrl": ""
-    },
-    "searchRule": {
-      "charset": "GBK",
-      "method": "POST",
-      "resultRules": [
-        {
-          "author": "> :nth-child(3)",
-          "authorRegex": "",
-          "bookInfos": "._content tbody tr:gt(1)",
-          "bookUrl": "> :nth-child(1) a",
-          "name": "> :nth-child(1) a",
-          "nameRegex": ""
-        },
-        {
-          "author": ".author",
-          "authorRegex": ".*：(.*)",
-          "bookInfos": ".intro",
-          "bookUrl": "",
-          "name": ".title h2",
-          "nameRegex": ""
-        }
-      ],
-      "searchKey": "searchkey",
-      "serverUrl": "/modules/article/ss.php"
-    },
-    "sequence": 1.0,
-    "sourceName": "6毛",
-    "topLevelDomain": "6mao.com"
   }
 ]
