@@ -1,55 +1,60 @@
 [
   {
-    "baseUrl": "http://www.yunlaige.com/",
-    "chapterContentRule": {
-      "bookChapterContent": "#content"
-    },
-    "chapterListRule": {
-      "bookChapterList": "#contenttable > :nth-child(1) a[href]",
-      "bookChapterName": "a",
-      "bookChapterNameRegex": "",
-      "bookChapterUrl": "a"
-    },
-    "enable": true,
-    "introRule": {
-      "bookAuthor": ".book-info .info > :nth-child(2) > :nth-child(1)",
-      "bookAuthorRegex": "",
-      "bookChapterListUrl": ".book-info .info > :nth-child(4) a[href]",
-      "bookCoverImgUrl": ".book-info > :nth-child(1) > :nth-child(1)",
-      "bookIntro": ".book-info .info > :nth-child(3)",
-      "bookIntroRegex": "",
-      "bookName": ".book-info .info > :nth-child(1) > :nth-child(1)",
-      "bookNameRegex": "",
-      "bookUrl": ""
-    },
-    "searchRule": {
-      "charset": "GBK",
-      "method": "POST",
-      "resultRules": [
-        {
-          "author": "> :nth-child(2) > :nth-child(2)",
-          "authorRegex": "(.*)/.*",
-          "bookInfos": ".chart-dashed-list > *",
-          "bookUrl": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
-          "name": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
-          "nameRegex": ""
-        },
-        {
-          "author": "> :nth-child(2) > :nth-child(1)",
-          "authorRegex": "*",
-          "bookInfos": ".book-info .info",
-          "bookUrl": "",
-          "name": "> :nth-child(1) > :nth-child(1)",
-          "nameRegex": ""
-        }
-      ],
-      "searchKey": "searchkey",
-      "serverUrl": "http://www.yunlaige.com/modules/article/search.php"
-    },
-    "sequence": 1.0,
-    "sourceName": "云来阁",
-    "topLevelDomain": "yunlaige.com"
-  },
+	"baseUrl": "http://www.yunlaige.com/",
+	"chapterContentRule": {
+		"bookChapterContent": "#content"
+	},
+	"chapterListRule": {
+		"bookChapterList": "#contenttable > :nth-child(1) a[href]",
+		"bookChapterName": "a",
+		"bookChapterNameRegex": "",
+		"bookChapterUrl": "a"
+	},
+	"enable": true,
+	"introRule": {
+		"bookAuthor": ".book-info .info > :nth-child(2) > :nth-child(1)",
+		"bookAuthorRegex": "",
+		"bookChapterListUrl": ".book-info .info > :nth-child(4) a[href]",
+		"bookCoverImgUrl": ".book-info > :nth-child(1) > :nth-child(1)",
+		"bookIntro": ".book-info .info > :nth-child(3)",
+		"bookIntroRegex": "",
+		"bookName": ".book-info .info > :nth-child(1) > :nth-child(1)",
+		"bookNameRegex": "",
+		"bookUrl": ""
+	},
+	"searchRule": {
+		"charset": "GBK",
+		"method": "POST",
+		"resultRules": [{
+			"author": "> :nth-child(2) > :nth-child(2)",
+			"authorRegex": "(.*)/.*",
+			"bookCoverImgUrl": ".cover img",
+			"bookInfos": ".chart-dashed-list > *",
+			"bookUrl": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
+			"lastChapterName": ".htitle .gxz a",
+			"lastChapterNameRegex": "",
+			"lastChapterUrl": ".htitle .gxz a",
+			"name": "> :nth-child(2) > :nth-child(1) > :nth-child(1) a[href]",
+			"nameRegex": ""
+		}, {
+			"author": ".info > :nth-child(2) > :nth-child(1)",
+			"authorRegex": ".*：(.*)",
+			"bookCoverImgUrl": ".book-info > :nth-child(1) > :nth-child(1)",
+			"bookInfos": ".book-info",
+			"bookUrl": "",
+			"lastChapterName": ".tabnewlist tr:nth-child(1) td:nth-child(1) a",
+			"lastChapterNameRegex": "",
+			"lastChapterUrl": ".tabnewlist tr:nth-child(1) td:nth-child(1) a",
+			"name": ".info > :nth-child(1) > :nth-child(1)",
+			"nameRegex": ""
+		}],
+		"searchKey": "searchkey",
+		"serverUrl": "http://www.yunlaige.com/modules/article/search.php"
+	},
+	"sequence": 1.0,
+	"sourceName": "云来阁",
+	"topLevelDomain": "yunlaige.com"
+},
   {
     "baseUrl": "https://www.aszw.org/",
     "chapterContentRule": {
