@@ -318,14 +318,14 @@
   },
   "enable": true,
   "introRule": {
-    "bookAuthor": "#book \u003e :nth-child(1) a",
+    "bookAuthor": "#book > :nth-child(1) a",
     "bookAuthorRegex": "",
     "bookChapterListUrl": "#book ul .a a",
     "bookCoverImgUrl": "#book .cl .atc img",
     "bookIntro": "#book .intro",
     "bookIntroRegex": "",
-    "bookName": "#book \u003e :nth-child(1)",
-    "bookNameRegex": "(.*)\u003cspan\u003e",
+    "bookName": "#book > :nth-child(1)",
+    "bookNameRegex": "(.*)<span>",
     "bookUrl": ""
   },
   "searchRule": {
@@ -336,7 +336,7 @@
         "author": ".author",
         "authorRegex": "",
         "bookCoverImgUrl": ".c .atc img",
-        "bookInfos": "#cont_list_all .listtab \u003e ",
+        "bookInfos": "#cont_list_all .listtab > ",
         "bookUrl": ".name a",
         "lastChapterName": ".chapter a",
         "lastChapterNameRegex": "",
@@ -345,7 +345,7 @@
         "nameRegex": ""
       },
       {
-        "author": "\u003e :nth-child(1) a",
+        "author": "> :nth-child(1) a",
         "authorRegex": "",
         "bookCoverImgUrl": ".cl .atc img",
         "bookInfos": "#book",
@@ -353,8 +353,8 @@
         "lastChapterName": ".last a",
         "lastChapterNameRegex": "",
         "lastChapterUrl": ".last a",
-        "name": "\u003e :nth-child(1)",
-        "nameRegex": "(.)\u003cspan\u003e"
+        "name": "> :nth-child(1)",
+        "nameRegex": "(.)<span>"
       }
     ],
     "searchKey": "searchkey",
