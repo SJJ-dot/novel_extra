@@ -175,7 +175,7 @@
       "bookChapterNameRegex": "",
       "bookChapterUrl": "a"
     },
-    "enable": false,
+    "enable": true,
     "introRule": {
       "bookAuthor": "#info > :nth-child(2)",
       "bookAuthorRegex": ".*：(.*)",
