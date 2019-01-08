@@ -354,7 +354,7 @@
         "lastChapterNameRegex": "",
         "lastChapterUrl": ".last a",
         "name": "> :nth-child(1)",
-        "nameRegex": "(.)<span>"
+        "nameRegex": "(.*)<span>"
       }
     ],
     "searchKey": "searchkey",
