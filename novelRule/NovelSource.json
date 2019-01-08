@@ -304,5 +304,64 @@
     "sequence": 1.0,
     "sourceName": "大海中文",
     "topLevelDomain": "dhzw.org"
-  }
+  },
+  {
+  "baseUrl": "http://www.liushuba.com/",
+  "chapterContentRule": {
+    "bookChapterContent": "#contents"
+  },
+  "chapterListRule": {
+    "bookChapterList": ".list a",
+    "bookChapterName": "a",
+    "bookChapterNameRegex": "",
+    "bookChapterUrl": "a"
+  },
+  "enable": true,
+  "introRule": {
+    "bookAuthor": "#book \u003e :nth-child(1) a",
+    "bookAuthorRegex": "",
+    "bookChapterListUrl": "#book ul .a a",
+    "bookCoverImgUrl": "#book .cl .atc img",
+    "bookIntro": "#book .intro",
+    "bookIntroRegex": "",
+    "bookName": "#book \u003e :nth-child(1)",
+    "bookNameRegex": "(.*)\u003cspan\u003e",
+    "bookUrl": ""
+  },
+  "searchRule": {
+    "charset": "GBK",
+    "method": "POST",
+    "resultRules": [
+      {
+        "author": ".author",
+        "authorRegex": "",
+        "bookCoverImgUrl": ".c .atc img",
+        "bookInfos": "#cont_list_all .listtab \u003e ",
+        "bookUrl": ".name a",
+        "lastChapterName": ".chapter a",
+        "lastChapterNameRegex": "",
+        "lastChapterUrl": ".chapter a",
+        "name": ".name a",
+        "nameRegex": ""
+      },
+      {
+        "author": "\u003e :nth-child(1) a",
+        "authorRegex": "",
+        "bookCoverImgUrl": ".cl .atc img",
+        "bookInfos": "#book",
+        "bookUrl": "",
+        "lastChapterName": ".last a",
+        "lastChapterNameRegex": "",
+        "lastChapterUrl": ".last a",
+        "name": "\u003e :nth-child(1)",
+        "nameRegex": "(.)\u003cspan\u003e"
+      }
+    ],
+    "searchKey": "searchkey",
+    "serverUrl": "/modules/article/search.php"
+  },
+  "sequence": 1.0,
+  "sourceName": "古古小说网",
+  "topLevelDomain": "liushuba.com"
+}
 ]
