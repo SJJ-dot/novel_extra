@@ -336,7 +336,7 @@
         "author": ".author",
         "authorRegex": "",
         "bookCoverImgUrl": ".c .atc img",
-        "bookInfos": "#cont_list_all .listtab > ",
+        "bookInfos": "#cont_list_all .listtab > *",
         "bookUrl": ".name a",
         "lastChapterName": ".chapter a",
         "lastChapterNameRegex": "",
