@@ -59,7 +59,7 @@
     "topLevelDomain": "yunlaige.com"
   },
   {
-    "baseUrl": "http://www.6mao.com/",
+    "baseUrl": "https://www.37shuwu.com/",
     "chapterContentRule": {
       "bookChapterContent": "#neirong"
     },
@@ -114,8 +114,8 @@
       "serverUrl": "/modules/article/ss.php"
     },
     "sequence": 1.0,
-    "sourceName": "6毛",
-    "topLevelDomain": "6mao.com"
+    "sourceName": "37书屋",
+    "topLevelDomain": "37shuwu.com"
   },
   {
     "baseUrl": "https://www.aszw.org/",
