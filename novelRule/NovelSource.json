@@ -1,4 +1,62 @@
-[
+[{
+  "baseUrl": "https://www.81xzw.com/",
+  "chapterContentRule": {
+    "bookChapterContent": "#content"
+  },
+  "chapterListRule": {
+    "bookChapterList": "body > div:nth-child(7) > ul",
+    "bookChapterName": "a",
+    "bookChapterNameRegex": "",
+    "bookChapterUrl": "a"
+  },
+  "enable": true,
+  "introRule": {
+    "bookAuthor": "body > div.jieshao > div.rt > div.msg > em:nth-child(1) > a",
+    "bookAuthorRegex": "",
+    "bookChapterListUrl": "",
+    "bookCoverImgUrl": "body > div.jieshao > div.lf > img",
+    "bookIntro": "body > div.jieshao > div.rt > div.intro",
+    "bookIntroRegex": "",
+    "bookName": "body > div.place > a:nth-child(3)",
+    "bookNameRegex": "",
+    "bookUrl": ""
+  },
+  "searchRule": {
+    "charset": "UTF8",
+    "method": "POST",
+    "resultRules": [
+      {
+        "author": "> dd > span",
+        "authorRegex": "",
+        "bookCoverImgUrl": "> dt > a > img",
+        "bookInfos": "body > div.fengtui.fengtui_top.cf > dl",
+        "bookUrl": "> dd > h3 > a",
+        "lastChapterName": "",
+        "lastChapterNameRegex": "",
+        "lastChapterUrl": "",
+        "name": "> dd > h3 > a",
+        "nameRegex": ""
+      },
+      {
+        "author": "body > div.jieshao > div.rt > div.msg > em:nth-child(1) > a",
+        "authorRegex": "",
+        "bookCoverImgUrl": "body > div.jieshao > div.lf > img",
+        "bookInfos": "html",
+        "bookUrl": "body > div.place > a:nth-child(3)",
+        "lastChapterName": "body > div.jieshao > div.rt > div.msg > em:nth-child(4) > a",
+        "lastChapterNameRegex": "",
+        "lastChapterUrl": "body > div.jieshao > div.rt > div.msg > em:nth-child(4) > a",
+        "name": "body > div.place > a:nth-child(3)",
+        "nameRegex": ""
+      }
+    ],
+    "searchKey": "action=search&q",
+    "serverUrl": "https://www.81xzw.com/home/search"
+  },
+  "sequence": 1.0,
+  "sourceName": "81新中文",
+  "topLevelDomain": "81xzw.com"
+},
   {
     "baseUrl": "http://www.yunlaige.com/",
     "chapterContentRule": {
