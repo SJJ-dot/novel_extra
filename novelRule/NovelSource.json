@@ -1,4 +1,62 @@
 [{
+  "baseUrl": "https://www.lingyu.org/",
+  "chapterContentRule": {
+    "bookChapterContent": "#articlecontent"
+  },
+  "chapterListRule": {
+    "bookChapterList": "body > div > div.ml_content > div.zb > div.ml_list > ul > li",
+    "bookChapterName": "a",
+    "bookChapterNameRegex": "",
+    "bookChapterUrl": "a"
+  },
+  "enable": true,
+  "introRule": {
+    "bookAuthor": "head > meta[property=og:novel:author]",
+    "bookAuthorRegex": "",
+    "bookChapterListUrl": "",
+    "bookCoverImgUrl": "body > div > div.catalog > div > div.pic > img",
+    "bookIntro": "head > meta[property=og:description]",
+    "bookIntroRegex": "",
+    "bookName": "head > meta[property=og:novel:book_name]",
+    "bookNameRegex": "",
+    "bookUrl": ""
+  },
+  "searchRule": {
+    "charset": "GBK",
+    "method": "POST",
+    "resultRules": [
+      {
+        "author": "> td:nth-child(3)",
+        "authorRegex": "",
+        "bookCoverImgUrl": "",
+        "bookInfos": "#author > tbody > tr[1:]",
+        "bookUrl": "> td:nth-child(1) > a",
+        "lastChapterName": "> td:nth-child(2) > a",
+        "lastChapterNameRegex": "",
+        "lastChapterUrl": "> td:nth-child(2) > a",
+        "name": "> td:nth-child(1) > a",
+        "nameRegex": ""
+      },
+      {
+        "author": "head > meta[property=og:novel:author]",
+        "authorRegex": "",
+        "bookCoverImgUrl": "body > div > div.catalog > div > div.pic > img",
+        "bookInfos": "html",
+        "bookUrl": "head > meta[property=og:novel:read_url]",
+        "lastChapterName": "head > meta[property=og:novel:latest_chapter_name]",
+        "lastChapterNameRegex": "",
+        "lastChapterUrl": "head > meta[property=og:novel:latest_chapter_url]",
+        "name": "head > meta[property=og:novel:book_name]",
+        "nameRegex": ""
+      }
+    ],
+    "searchKey": "searchkey",
+    "serverUrl": "https://www.lingyu.org/modules/article/search.php"
+  },
+  "sequence": 1.0,
+  "sourceName": "领域文学",
+  "topLevelDomain": "lingyu.org"
+},{
   "baseUrl": "https://www.81xzw.com/",
   "chapterContentRule": {
     "bookChapterContent": "#content"
