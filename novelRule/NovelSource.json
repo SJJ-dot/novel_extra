@@ -4,7 +4,7 @@
     "bookChapterContent": "#content"
   },
   "chapterListRule": {
-    "bookChapterList": "body > div:nth-child(7) > ul",
+    "bookChapterList": "body > div:nth-child(7) > ul > *",
     "bookChapterName": "a",
     "bookChapterNameRegex": "",
     "bookChapterUrl": "a"
@@ -42,7 +42,7 @@
         "authorRegex": "",
         "bookCoverImgUrl": "body > div.jieshao > div.lf > img",
         "bookInfos": "html",
-        "bookUrl": "body > div.place > a:nth-child(3)",
+        "bookUrl": "",
         "lastChapterName": "body > div.jieshao > div.rt > div.msg > em:nth-child(4) > a",
         "lastChapterNameRegex": "",
         "lastChapterUrl": "body > div.jieshao > div.rt > div.msg > em:nth-child(4) > a",
