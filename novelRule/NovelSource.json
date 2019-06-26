@@ -420,5 +420,65 @@
     "sequence": 1.0,
     "sourceName": "大海中文",
     "topLevelDomain": "dhzw.org"
+  },
+  {
+    "baseUrl": "https://www.55duba.com/",
+    "chapterContentRule": {
+      "bookChapterContent": "#contents"
+    },
+    "chapterListRule": {
+      "bookChapterList": "table.list > tbody > tr > td > a",
+      "bookChapterName": "a",
+      "bookChapterNameRegex": "",
+      "bookChapterUrl": "a"
+    },
+    "enable": true,
+    "introRule": {
+      "bookAuthor": "#book > h1 > span > a",
+      "bookAuthorRegex": "",
+      "bookChapterListUrl": "#book > dl > dd > ul > li.a > a",
+      "bookCoverImgUrl": "#book > dl > dt > div.atc > img",
+      "bookIntro": "#book > dl > dd > div.intro > p:nth-child(2)",
+      "bookIntroRegex": "",
+      "bookName": "#book > h1",
+      "bookNameRegex": "(.*)<span>",
+      "bookUrl": ""
+    },
+    "searchRule": {
+      "charset": "GBK",
+      "method": "POST",
+      "resultRules": [
+        {
+          "author": "> dd > p:nth-child(4)",
+          "authorRegex": "作者：(.*)",
+          "bookCoverImgUrl": "dd > div > a > img",
+          "bookInfos": "#cont_list_all > div.listtab > dl",
+          "bookUrl": "> dd > p:nth-child(2) > a",
+          "lastChapterName": "> dd > p:nth-child(5) > a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": "> dd > p:nth-child(5) > a",
+          "name": "> dd > p:nth-child(2) > a",
+          "nameRegex": ""
+        },
+        {
+          "author": "#book > h1 > span > a",
+          "authorRegex": "",
+          "bookCoverImgUrl": "#book > dl > dt > div.atc > img",
+          "bookInfos": "#bookinfo",
+          "bookUrl": "",
+          "lastChapterName": "#book > dl > dd > div > a",
+          "lastChapterNameRegex": "",
+          "lastChapterUrl": "#book > dl > dd > div > a",
+          "name": "#book > h1",
+          "nameRegex": "(.*)<span>"
+        }
+      ],
+      "searchKey": "searchkey&searchtype=articlename&submit=搜索",
+      "serverUrl": "https://www.55duba.com/modules/article/search.php"
+    },
+    "sequence": 1.0,
+    "sourceName": "55小说网",
+    "topLevelDomain": "55duba.com",
+    "version": 0
   }
 ]
